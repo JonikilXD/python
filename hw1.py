@@ -6,8 +6,3 @@ if x < 86400:
     print(f"{c} часов,{m} минут,{s} секунд")
 else:
     print("Вы вышли из диапозона")
-adasdasdas
-asd
-asd
-as
-asdasd
