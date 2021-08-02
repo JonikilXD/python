@@ -233,7 +233,7 @@ def agg(n, m):
     print(n + m)
 
 
-def generator(n):
+def hw2generator(n):
     """Выводит числа Фибоначи в n диапазоне"""
     pool = [0, 1] + [0] * (n - 1)
     for i in range(2, n + 1):
@@ -242,9 +242,11 @@ def generator(n):
         i += i
 
 
-val = generator(30)
+val = hw2generator(30)
 print(next(val))
 
+
+## HW3
 
 class Point:
 
@@ -258,8 +260,8 @@ class Point:
         if self.x == self.y:
             self.dio = self.x ** 0.5
         else:
-            self.dio = (self.x ** 2 + self.y ** 2)**0.5
-        self.ras = (self.dio ** 2 + self.z ** 2)**0.5
+            self.dio = (self.x ** 2 + self.y ** 2) ** 0.5
+        self.ras = (self.dio ** 2 + self.z ** 2) ** 0.5
         return print(self.ras)
 
     def razm(self):
@@ -287,8 +289,8 @@ class straight:
             self.raz2 = self.A[2] - self.B[2]
         else:
             self.raz2 = self.B[2] - self.A[2]
-        self.dio = (self.raz ** 2 + self.raz1 ** 2)**0.5
-        self.ras = (self.dio ** 2 + self.raz2 ** 2)**0.5
+        self.dio = (self.raz ** 2 + self.raz1 ** 2) ** 0.5
+        self.ras = (self.dio ** 2 + self.raz2 ** 2) ** 0.5
         return print(f"Длинна {self.ras} см")
 
     def perenos(self):
